@@ -1,0 +1,710 @@
+@import url("normalise.css");
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr, 6fr;
+  grid-template-areas: "hoofd hoofd "
+                      "tekst tekst "
+                      "menu1 midden1 "
+                      "menu2 midden2 ";
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#form{
+  margin-top: 20px;
+  text-align: left;
+  padding-right:31px;
+}
+
+#main {
+  background-color: #252b47;
+  grid-area: hoofd;
+  height: 600px;
+}
+
+#info {
+  background-color: #272e4c;
+  grid-area: tekst;
+  height: 300px;
+  font-family: 'Didact Gothic', sans-serif;
+
+}
+
+#linkerkolom2 img {
+
+  width: 100%;
+}
+
+
+#linkerkolom2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#linkerkolom2:after {
+  content: '';
+  position: absolute;
+  top:0px;
+  left: 0px;
+  transition: .5s ease;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 173, 200, 0.9);
+
+  }
+
+#linkerkolom2:hover:after {
+  opacity: 0;
+}
+
+#centrum1 img {
+  width: 100%;
+}
+#centrum1 {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#centrum1:after {
+  content: '';
+  position: absolute;
+  top:0px;
+  left: 0px;
+  transition: .5s ease;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(212, 131, 123, 0.9);
+}
+
+
+#centrum1:hover:after {
+  opacity: 0;
+}
+#centrum2 img {
+  width: 100%;
+}
+#centrum2 {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#centrum2:after {
+  content: '';
+  position: absolute;
+  top:0px;
+  left: 0px;
+  transition: .5s ease;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(121, 173, 150, 0.9);
+
+}
+
+
+#centrum2:hover:after {
+  opacity: 0;
+}
+
+#linkerkolom1 img {
+  width: 100%;
+  height: 100%;
+}
+#linkerkolom1 {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#linkerkolom1:after {
+  content: '';
+  position: absolute;
+  top:0px;
+  left: 0px;
+  transition: .5s ease;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(125, 117, 178, 0.9);
+}
+
+#linkerkolom1:hover:after {
+  opacity: 0;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /*left: 0;
+  right: 0;*/
+  height: 300px;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+
+
+.hoofdplaatje:hover .overlay {
+  opacity: 4;
+}
+
+.text {
+  color: white;
+  font-size: 34px;
+  font-family: 'Didact Gothic', sans-serif;
+  position: absolute;
+  top: 73%;
+  left: 15%;
+  text-align: center;
+
+}
+
+
+#Sidemenu a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s; /* snelheid*/
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  border-radius: 0 50px 50px 0;
+}
+
+#Sidemenu a:hover {
+  left: 0;
+}
+
+#home {
+
+  font-family: 'Krub', sans-serif;
+  top: 20px; /*hoogte van de balk*/
+  background-color: #64adc8;
+}
+
+#about {
+  font-family: 'Krub', sans-serif;
+  top: 80px;
+  background-color: #7d75b2;
+}
+
+#projects {
+  font-family: 'Krub', sans-serif;
+  top: 140px;
+  background-color: #d4837b;
+}
+
+#contact {
+  font-family: 'Krub', sans-serif;
+  top: 200px;
+  background-color: #79ad96
+  ;
+}
+
+#flexbox {
+  height: 900px;
+  background-color: #232943;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.box {
+  background-color: #232943;
+  width: 50px;
+  height: 55px;
+
+}
+
+.box:hover {
+  background-color: #232943;
+  width: 52px;
+  height: 52px;
+
+}
+
+
+
+#mainpic{
+  filter: blur(1px) ;
+
+}
+
+#mainpic:hover{
+  filter: sepia(0.66) ;
+
+}
+
+article{
+  color: #989faa;
+  font-family: 'Krub', sans-serif;
+}
+
+article{
+  font-family: 'Krub', sans-serif;
+}
+
+
+input.name{
+  left: -70px;
+  font-family: 'Krub', sans-serif;
+  width: 200px;
+  height: 50px;
+  border: none ;
+  background-color: #2a2f4a;
+}
+
+input.last-name{
+  font-family: 'Krub', sans-serif;
+  width: 300px;
+  height: 50px;
+  border: none ;
+  background-color: #2a2f4a;
+}
+
+input.email{
+  font-family: 'Krub', sans-serif;
+  width: 300px;
+  height: 50px;
+  border: none ;
+  background-color: #2a2f4a;
+}
+
+input.comment{
+  font-family: 'Krub', sans-serif;
+  width: 405px;
+  height: 50px;
+  border: none ;
+  background-color: #2a2f4a;
+}
+
+input.comment{
+  font-family: 'Krub', sans-serif;
+  width: 405px;
+  height: 50px;
+  border: none ;
+  background-color: #2a2f4a;
+}
+
+
+
+input.submit{
+  font-size: 15px;
+  font-family: 'Krub', sans-serif;
+  width: 200px;
+  height: 50px;
+  border: none ;
+  color: #2a2f4a
+  background-color: white;
+  transition: .5s ease;
+
+}
+
+input.submit:hover{
+  font-size: 15px;
+  font-family: 'Krub', sans-serif;
+  width: 200px;
+  height: 50px;
+  border: none ;
+  color: #2a2f4a
+  background-color: white;
+  transition: .5s ease;
+  opacity: .5;
+
+}
+
+
+ input.reset{
+  font-size: 15px;
+  font-family: 'Krub', sans-serif;
+  width: 200px;
+  height: 50px;
+  border: 2px solid white;
+  color: white;
+  background-color: #2a2f4a;
+  transition: .5s ease;
+}
+
+input.reset:hover{
+ font-size: 15px;
+ font-family: 'Krub', sans-serif;
+ width: 200px;
+ height: 50px;
+ border: 2px solid white;
+ color: white;
+ background-color: #2a2f4a;
+ transition: .5s ease;
+ opacity: .5;
+}
+
+.content{
+  left:-80%;
+}
+
+.u{
+  width: 70px;
+  height: 70px;
+}
+
+.s{
+  transition: .5s ease;
+  display: flex;
+}
+
+.s:hover{
+  transition: .5s ease;
+  opacity: .5
+}
+
+
+/*.myfilter img {
+  filter: contrast(0.22) ;
+
+}
+
+<img class= myfilter src="vuur2.png" alt="plaatje1" style="width:100%;">
+<div class="text">Never forget to sprakle</div>
+
+<div class="overlay"> */
+
+
+
+
+
+
+
+p{
+  padding: 15px;
+  margin: 30px;
+  color:white;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: left;
+  font-size: 20px;
+  position: relative;
+
+
+}
+
+p:hover{
+  padding: 15px;
+  margin: 30px;
+  color:white;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: left;
+  font-size: 20px;
+  transition: .5s ease;
+  opacity: 0.5
+
+}
+
+h2{
+  margin-left: 50px;
+  margin-top: 30px;
+  color:white;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: left;
+  font-size: 25px;
+
+
+}
+
+h2:hover{
+  transition: .5s ease;
+  opacity: 0.5
+
+}
+
+
+.border-bottom{
+  border-bottom: 5px solid white;
+
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.5
+  background-color: transparent;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+}
+
+
+@media only screen and (max-width:375px) {
+
+
+  .text {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    top: 40%;
+    left: 45%;
+    text-align: center;
+
+  }
+    p{
+
+      color:white;
+      font-family: 'Didact Gothic', sans-serif;
+      text-align: left;
+      font-size: 16px;
+
+
+
+    }
+
+
+    p:hover{
+
+      color:white;
+      font-family: 'Didact Gothic', sans-serif;
+      text-align: left;
+      font-size: 16px;
+      transition: .5s ease;
+      opacity: 0.5
+
+    }
+
+
+    /* stijlregels voor schermen ≤ 320px breed */
+    #container {
+      grid-template-columns: 1fr;
+      grid-template-areas: "hoofd  "
+                          "tekst  "
+                          "menu1  "
+                          "menu2  "
+                          "midden1 "
+                          "midden2"
+
+    }
+
+    #Sidemenu a {
+      position: absolute;
+      left: -100px;
+      transition: 0.3s; /* snelheid*/
+      width: 200px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      border-radius: 0 10px 10px 0;
+    }
+
+    #Sidemenu a:hover {
+      left: -25px;
+
+    }
+
+    h2{
+
+      color:white;
+      margin-top: 30px;
+      font-family: 'Didact Gothic', sans-serif;
+      text-align: left;
+      font-size: 15px;
+
+
+
+
+
+    }
+
+    #info {
+      background-color: #272e4c;
+      grid-area: tekst;
+      height: 550px;
+      width: 400px;
+      font-family: 'Didact Gothic', sans-serif;
+
+    }
+
+    #main{
+      background-color: #252b47;
+      grid-area: hoofd;
+      height: 200px;
+    }
+
+    input.name{
+      left: -40px;
+      font-family: 'Krub', sans-serif;
+      width: 150px;
+      height: 30px;
+      border: none ;
+      background-color: #2a2f4a;
+    }
+
+    input.last-name{
+      font-family: 'Krub', sans-serif;
+      width: 150px;
+      height: 30px;
+      border: none ;
+      background-color: #2a2f4a;
+    }
+
+    input.email{
+      font-family: 'Krub', sans-serif;
+      width: 150px;
+      height: 30px;
+      border: none ;
+      background-color: #2a2f4a;
+    }
+
+
+
+    input.comment{
+      font-family: 'Krub', sans-serif;
+      font-size: 10px;
+      width: 205px;
+      height: 30px;
+      border: none ;
+      background-color: #2a2f4a;
+    }
+
+
+
+    input.submit{
+      font-size: 15px;
+      font-family: 'Krub', sans-serif;
+      width: 200px;
+      height: 30px;
+      border: none ;
+      color: #2a2f4a
+      background-color: white;
+      transition: .5s ease;
+
+    }
+
+    input.submit:hover{
+      font-size: 15px;
+      font-family: 'Krub', sans-serif;
+      width: 200px;
+      height: 30px;
+      border: none ;
+      color: #2a2f4a
+      background-color: white;
+      transition: .5s ease;
+      opacity: .5;
+
+    }
+
+
+     input.reset{
+      font-size: 15px;
+      font-family: 'Krub', sans-serif;
+      width: 200px;
+      height: 30px;
+      border: 2px solid white;
+      color: white;
+      background-color: #2a2f4a;
+      transition: .5s ease;
+    }
+
+    input.reset:hover{
+     font-size: 15px;
+     font-family: 'Krub', sans-serif;
+     width: 100px;
+     height: 30px;
+     border: 2px solid white;
+     color: white;
+     background-color: #2a2f4a;
+     transition: .5s ease;
+     opacity: .5;
+    }
+
+
+    #flexbox {
+      height: 700px;
+      width: 400px;
+      background-color: #232943;
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+
+    .content{
+      margin-top: 100px;
+      padding-right: 100px;
+      left:-30%;
+      width: 100px;
+    }
+
+    .s{
+      width: 200px;
+    }
+
+    h1{
+      font-size: 20px;
+      text-align: center;
+      left:-30%;
+
+
+   }
+
+
+   #home {
+
+     font-family: 'Krub', sans-serif;
+     left: -30%;
+     text-align: right;
+     top: 20px; /*hoogte van de balk*/
+     background-color: #64adc8;
+   }
+
+
+   #about {
+     font-family: 'Krub', sans-serif;
+     text-align: right;
+     top: 80px;
+     background-color: #7d75b2;
+   }
+
+   #projects {
+     font-family: 'Krub', sans-serif;
+     text-align: right;
+     top: 140px;
+     background-color: #d4837b;
+
+   }
+
+   #contact {
+     font-family: 'Krub', sans-serif;
+     text-align: right;
+     top: 200px;
+     background-color: #79ad96
+     ;
+   }
+
+   #main {
+     background-color: #252b47;
+     grid-area: hoofd;
+     height: 400px;
+   }
+
+
+
+
+}
