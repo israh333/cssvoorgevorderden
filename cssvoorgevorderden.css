@@ -9,6 +9,8 @@
                       "menu2 midden2 ";
 }
 
+
+
 body {
   margin: 0px;
   padding: 0px;
@@ -29,7 +31,7 @@ body {
 #info {
   background-color: #272e4c;
   grid-area: tekst;
-  height: 300px;
+  height: 3te00px;
   font-family: 'Didact Gothic', sans-serif;
 
 }
@@ -163,7 +165,7 @@ body {
 .text {
   color: white;
   font-size: 34px;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Homemade Apple', cursive;
   position: absolute;
   top: 73%;
   left: 15%;
@@ -425,6 +427,7 @@ h2:hover{
   transition: .5s ease;
   opacity: 0.5
 
+
 }
 
 
@@ -432,6 +435,7 @@ h2:hover{
   border-bottom: 5px solid white;
 
 }
+
 
 a:link {
   color: white;
@@ -639,6 +643,9 @@ a:active {
 
     }
 
+
+
+
     #info {
       background-color: #272e4c;
       grid-area: tekst;
@@ -655,6 +662,7 @@ a:active {
     }
 
     input.name{
+      color: white;
       left: -40px;
       font-family: 'Krub', sans-serif;
       width: 150px;
@@ -741,6 +749,10 @@ a:active {
      opacity: .5;
     }
 
+    input [type=text] {
+
+      color: white;
+}
 
     #flexbox {
       height: 700px;
