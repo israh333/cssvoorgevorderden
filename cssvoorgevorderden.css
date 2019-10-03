@@ -661,6 +661,8 @@ a:active {
       height: 200px;
     }
 
+
+
     input.name{
       color: white;
       left: -40px;
@@ -749,10 +751,7 @@ a:active {
      opacity: .5;
     }
 
-    input [type=text] {
 
-      color: white;
-}
 
     #flexbox {
       height: 700px;
@@ -822,6 +821,13 @@ a:active {
      height: 400px;
    }
 
+   #numb{
+     background-color: red;
+   }
+
+   .form2{
+     color:red;
+   }
 
 
 

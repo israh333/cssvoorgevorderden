@@ -2,6 +2,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="cssvoorgevorderden.css" type="text/css">
+
   <link href="https://fonts.googleapis.com/css?family=Krub&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
@@ -13,7 +14,8 @@
 
   <div class="hoofdplaatje">
     <div class="overlay">
-    <div class="text">Contact</div>
+    <div class="text">Contact    </div>
+
 </div>
 
 
@@ -32,6 +34,8 @@
 
 <br>My hobbies are kickboksing, dancing and coding
 <br>My favourite subjects at schools are Computer Science, Economics and English.
+
+
 </a>
 
 
@@ -45,28 +49,63 @@
 
 
 
+
+
 <div id="flexbox">
   <article class="content">
 
-    <div id= "form"><h1>Contact</h1></div>
+    <div id= "form"><h1>Contact</h1><p1> In order to contact me, you must be 10 or older, please submit your age
+</p1></div>
+
+
+
+<input id="numb">
+
+<button class="form2" type="button"  STYLE="color: white; background-color: 2a2f4a ;   border-style: none;
+      font-family: 'Didact Gothic', sans-serif;
+font-size: 15px;"onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+    <script>
+  function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x <  10) {
+      text = "Your not old enough, please ask your parents";
+    } else {
+      text = "You can continue to contact me";
+    }
+
+    document.getElementById("demo").innerHTML = text;
+  }
+  </script>
 
 
     <form action="mailto:israh.emara@coderclass.nl" method="post" enctype="text/plain">
-      Name<br><input ttype="text"  placeholder="Your name.." class= name type="text" name="name" >
+      Name<br><input type="text" STYLE="color: white;       font-family: 'Didact Gothic', sans-serif;
+      font-size: 16px;"   class= name type="text" name="name" >
       <br>
       <br>
       Last name<br>
-      <input type="text"  placeholder="Your lastname.." class = last-name type="text" name=" last name" >
+      <input type="text" STYLE="color: white;  font-family: 'Didact Gothic', sans-serif;
+      font-size: 16px;" class = last-name type="text" name=" last name" >
       <br>
       <br>
       E-mail<br>
-      <input type="text"  placeholder="Your e-mail.." class= email type="text" name="mail" value= >
+      <input type="text"  STYLE="color: white;       font-family: 'Didact Gothic', sans-serif;
+      font-size: 16px;" class= email type="text" name="mail" value= >
       <br>
       <br>
 
       Comment<br>
 
-      <input type="text"  placeholder="Your comment.." class= comment type="text" name="comment" size="50"><br><br>
+      <input type="text"  STYLE="color: white;       font-family: 'Didact Gothic', sans-serif;
+      font-size: 16px;." class= comment type="text" name="comment" size="50"><br><br>
 
       <a href="https://hetmml.nl/">
       <img src="s.png"  class= "s"alt="h" >
@@ -75,6 +114,9 @@
 
       <input class = submit type="submit" value="Send">
       <input class= reset type="reset" value="Clear">
+
+
+
 
 
 
