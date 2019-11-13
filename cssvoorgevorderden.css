@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr, 6fr;
   grid-template-areas: "hoofd hoofd "
+                        "fotos fotos"
                       "tekst tekst "
                       "menu1 midden1 "
                       "menu2 midden2 ";
@@ -12,12 +13,95 @@
 
 
 body {
+  background-color: #252b47;
+
   margin: 0px;
   padding: 0px;
 }
 
+.hilight h2{
+    font-family: 'Krub', sans-serif;
+    font-size: 45px;
+    color: #FFF;
+    z-index: 200;
+}
+
+.promo {
+    position: relative;
+}
+.promo img {
+    z-index: 1;
+}
+
+.hilight {
+    position: absolute;
+    height: 85px;
+    width: 415px;
+    opacity: 0.65;
+    font-family: 'Krub', sans-serif;
+    color: #FFF;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.hilight2 h2{
+    font-family: 'Krub', sans-serif;
+    font-size: 45px;
+    color: #FFF;
+    z-index: 200;
+}
+
+.promo {
+    position: relative;
+}
+.promo img {
+    z-index: 1;
+}
+
+.hilight2 {
+    position: absolute;
+    left: 50%;
+    height: 85px;
+    width: 415px;
+    opacity: 0.65;
+    font-family: 'Krub', sans-serif;
+    color: #FFF;
+    bottom: 0px;
+    z-index: 1;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.kickboks{
+  filter: grayscale(100%);
+}
+
+
+
+.form2{
+  background-color: #252b47;
+}
+
 #form{
-  margin-top: 90px;
+  margin-top: 80px;
   text-align: left;
   padding-right:31px;
 }
@@ -29,10 +113,24 @@ body {
 }
 
 #info {
+  background-color: #252b47;
+  grid-area: tekst;
+  top: 30%;
+  height: 500px;
+
+}
+
+
+#main2 {
+  background-color: #252b47;
+  grid-area: hoofd;
+  height: 600px;
+}
+
+#info2 {
   background-color: #272e4c;
   grid-area: tekst;
   height: 3te00px;
-  font-family: 'Didact Gothic', sans-serif;
 
 }
 
@@ -91,6 +189,7 @@ body {
 }
 #centrum2 img {
   width: 100%;
+  height: 100%;
 }
 #centrum2 {
 
@@ -167,7 +266,7 @@ body {
   font-size: 34px;
   font-family: 'Homemade Apple', cursive;
   position: absolute;
-  top: 73%;
+  top: 69%;
   left: 15%;
   text-align: center;
 
@@ -214,6 +313,69 @@ body {
   top: 200px;
   background-color: #79ad96
   ;
+}
+
+#pictures {
+  font-family: 'Krub', sans-serif;
+  top: 260px;
+  background-color: #daaf87;
+  ;
+}
+
+#Sidemenu a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s; /* snelheid*/
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  border-radius: 0 50px 50px 0;
+}
+
+#Sidemenu2 a:hover {
+  left: 0;
+}
+
+#home2 {
+
+  font-family: 'Krub', sans-serif;
+  top: 20px; /*hoogte van de balk*/
+  background-color: #ed4637	 ;
+}
+
+#about2 {
+  font-family: 'Krub', sans-serif;
+  top: 80px;
+  background-color: #f07d6f;
+}
+
+#projects2 {
+  font-family: 'Krub', sans-serif;
+  top: 140px;
+  background-color: #213873#f5f5f5;
+
+;
+}
+
+#contact2 {
+  font-family: 'Krub', sans-serif;
+  top: 200px;
+  background-color: #f5f5f5;
+  ;
+}
+
+#Sidemenu2 a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s; /* snelheid*/
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  border-radius: 0 50px 50px 0;
 }
 
 #flexbox {
@@ -756,17 +918,19 @@ a:active {
     #flexbox {
       height: 700px;
       width: 400px;
-      background-color: #232943;
+      background-color: #252b47;
       display: flex;
       justify-content: space-evenly;
 
     }
 
     .content{
-      margin-top: 100px;
-      padding-right: 100px;
+      background-color: #252b47;
+      margin-top: 60px;
+      padding-left: 100px;
       left:-30%;
-      width: 100px;
+      width: 300px;
+      height: 850px;
     }
 
     .s{
@@ -782,38 +946,7 @@ a:active {
    }
 
 
-   #home {
 
-     font-family: 'Krub', sans-serif;
-     left: -30%;
-     text-align: right;
-     top: 20px; /*hoogte van de balk*/
-     background-color: #64adc8;
-   }
-
-
-   #about {
-     font-family: 'Krub', sans-serif;
-     text-align: right;
-     top: 80px;
-     background-color: #7d75b2;
-   }
-
-   #projects {
-     font-family: 'Krub', sans-serif;
-     text-align: right;
-     top: 140px;
-     background-color: #d4837b;
-
-   }
-
-   #contact {
-     font-family: 'Krub', sans-serif;
-     text-align: right;
-     top: 200px;
-     background-color: #79ad96
-     ;
-   }
 
    #main {
      background-color: #252b47;
@@ -822,12 +955,338 @@ a:active {
    }
 
    #numb{
-     background-color: red;
+     background-color: white;
    }
 
    .form2{
-     color:red;
+     color:white;
    }
+
+  #bottom_go{
+    color:white;
+
+  }
+
+
+
+  #slider-wrapper {
+    width: 940px;
+    height: 470px;
+    margin: 50px auto;
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+
+  #s1 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #s2 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #s3 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #s4 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #s1:hover,
+  #s2:hover,
+  #s3:hover,
+  #s4:hover {
+    opacity: .50;
+  }
+
+  .inner-wrapper {
+    width: 940px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .control {
+    display: none;
+  }
+
+  #Slide1:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+
+  #Slide2:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+
+  #Slide3:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+  }
+
+  #Slide4:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+  }
+
+  #Slide1:checked + #s1 {
+    opacity: 1;
+  }
+
+  #Slide2:checked + #s2 {
+    opacity: 1;
+  }
+
+  #Slide3:checked + #s3 {
+    opacity: 1;
+  }
+
+  #Slide4:checked + #s4 {
+    opacity: 1;
+  }
+
+  .overflow-wrapper {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .slide img {
+    width: 25%;
+    float: left;
+  }
+
+  #Sidemenu a:hover {
+    left: 0;
+  }
+
+  #home {
+
+    font-family: 'Krub', sans-serif;
+    top: 20px; /*hoogte van de balk*/
+    background-color: #64adc8;
+    text-align: right;
+
+  }
+
+  #about {
+    font-family: 'Krub', sans-serif;
+    top: 80px;
+    background-color: #7d75b2;
+    text-align: right;
+
+  }
+
+  #projects {
+    font-family: 'Krub', sans-serif;
+    top: 140px;
+    background-color: #d4837b;
+    text-align: right;
+
+  }
+
+  #contact {
+    font-family: 'Krub', sans-serif;
+    top: 200px;
+    background-color: #79ad96;
+    text-align: right;
+
+  }
+
+
+
+
+  #pictures {
+    font-family: 'Krub', sans-serif;
+    text-align: right;
+    top: 260px;
+    background-color: #daaf87;
+    ;
+  }
+
+  #Sidemenu a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s; /* snelheid*/
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    border-radius: 0 50px 50px 0;
+  }
+
+
+
+
+  p1{
+    text-align: right;
+  }
+
+  .text {
+    color: white;
+    font-size: 24px;
+    font-family: 'Homemade Apple', cursive;
+    position: absolute;
+    top: 69%;
+    left: 45%;
+    text-align: center;
+
+  .form2{
+    background-color: #252b47;
+  }
+
+  p{
+    color: red;
+  }
+
+  .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.hilight h2{
+    font-family: 'Krub', sans-serif;
+    font-size: 405px;
+    color: #252b47F;
+    z-index: 200;
+}
+
+.promo {
+    position: relative;
+}
+.promo img {
+    z-index: 1;
+}
+
+.hilight {
+    position: absolute;
+    height: 85px;
+    width: 415px;
+    opacity: 0.65;
+    font-family: 'Krub', sans-serif;
+    color: #252b47;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.hilight2 h2{
+  top: -100%
+
+    font-family: 'Krub', sans-serif;
+    font-size: 450px;
+    color: red;
+    z-index: 200;
+}
+
+.promo {
+    position: relative;
+}
+.promo img {
+    z-index: 1;
+}
+
+.hilight2 {
+    position: absolute;
+    top: -100%
+    height: 85px;
+    width: 415px;
+    opacity: 0.65;
+    font-family: 'Krub', sans-serif;
+    color: #FFF;
+    bottom: 0px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
 
 
 

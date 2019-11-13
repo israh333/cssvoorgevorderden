@@ -8,58 +8,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width">
   <title>Portfolio van Israh</title>
+  <style type="text/css">
+  #slider {
+overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    width: 1000%; /* 100% for each picture, 10 pictures = 1000% */
+    margin: 0;
+    left: 0;
+    animation: 40s slider infinite;
+}
+    #slider figure img {
+        width: 10%; /* 100 / 10 pictures = 10% */
+        height: 700px; /* to set a maximum height  */
+        float: left;
+        /*  next 2 to continue responsive with the maximum height  */
+        max-width: 20%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+@keyframes slider {
+0% { left: 0; } /* you must divide 100% fot the amout of images you have */
+7% { left: 0%; } /* these intermediate steps (7%, 17%, 27%, ... will make the transition speed faster */
+10% { left: -100%; } /* because my total width: 1000% (10x 100% for 10 images), I will use 10% for each image */
+17% { left: -100%; }
+20% { left: -200%; }
+27% { left: -200%; }
+30% { left: -300%; }
+37% { left: -300%; }
+40% { left: -400%; }
+47% { left: -400%; }
+50% { left: -500%; }
+57% { left: -500%; }
+60% { left: -600%; }
+67% { left: -600%; }
+70% { left: -700%; }
+77% { left: -700%; }
+80% { left: -800%; }
+87% { left: -800%; }
+90% { left: -900%; }
+100% { left: -900%; }
+}
+  </style>
 </head>
 <body>
 
   <div class="hoofdplaatje">
     <div class="overlay">
-    <div class="text">made by israh Emara</div>
+    <div class="text">Made by Israh Emara</div>
 </div>
 
 
 <div id="Sidemenu" class="sidenav">
-  <a href="index.html" id="home">Home</a>
-  <a href="about.html" id="about">About</a>
-  <a href="project.html" id="projects">Projects</a>
-  <a href="contact.html" id="contact">Contact</a>
+  <a href="index.html#place" id="home">Home</a>
+  <a href="about.html#info2" id="about">About</a>
+  <a href="project.html#info" id="projects">Projects</a>
+  <a href="contact.html#bottom" id="contact">Contact</a>
+  <a href="new.html" id="pictures">Pictures</a>
+
 </div>
 
 
+
   <div id="container">
+    <div id="slider">
+      <figure>
+          <img src="bw1.png" />
+          <img class = "kickboks"src="k2.jpg" />
+          <img src="k4.png" />
+          <img class="kickboks" src="k5.png" />
+          <img class="kickboks" src="k6.png" />
+          <img class="kickboks" src="k7.png" />
+          <img src="bw7.png" />
+          <img src="bw8.png" />
+          <img src="bw9.png" />
+          <img src="wolf.png" />
+      </figure>
+    </div>
+
     <div id="main"></div>
-    <div id="info"><h2><span class="border-bottom"> About me</span>
+    <div id= "place">
+    <div id="info"><h2><span class="border-bottom"> Intro</span>
 </h2><p><a href="https://coderclass.nl/" target="_blank">I am Israh and I am 15 years old. At the moment I am attending the fourth year of highschool at the Metis Montessori Lyceum. <br>I live in the Netherlands and I love designing and making websites.
 
 <br>My hobbies are kickboksing, dancing and coding
-<br>My favourite subjects at schools are Computer Science, Economics and English.
+<br>My favourite subjects at schools are Computer Science, Economics and English. And I made this website using HTML and CSS. I really like working with these tools and designing my own websites. I also like traveling, fashion and culture.
 
 
 
 </a>
-
-
+</div>
     </p></div>
-    <div id="linkerkolom1"><img src="wolf.png" alt="h" ></div>
+
+    <div id="linkerkolom1"><img src="bw8.png" alt="h" ></div>
     <div id="linkerkolom2"><img src="beach.jpg" alt="h"></div>
-    <div id="centrum1"><img src="cactus.jpg" alt="h" ></div>
     <div id="centrum2"><img src="manhattan.jpg" alt="h" ></div>
+    <div id="centrum1"><img src="wolf.png" alt="h" ></div>
 
   </div>
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 
-<div id="flexbox">
-  
-<!---
-  <div class="box">
-    <img src="cloud-computing.png" alt="h" style="width:100%;" id="fb">
-  </div>
-  <div class="box">
-    <img src="hashtag.png" alt="h" style="width:100%;" id="insta">
-  </div>
-  <div class="box">
-    <img src="twitter.png" alt="h" style="width:100%;" id="twitter">
-  </div>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+</head>
 </body>
-</html>

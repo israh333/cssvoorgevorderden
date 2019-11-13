@@ -13,26 +13,32 @@
 
   <div class="hoofdplaatje">
     <div class="overlay">
-    <div class="text">Projects</div>
+    <div class="text">Check out the cool projects</div>
 </div>
 
 
 <div id="Sidemenu" class="sidenav">
-  <a href="index.html" id="home">Home</a>
-  <a href="about.html" id="about">About</a>
-  <a href="project.html" id="projects">Projects</a>
-  <a href="contact.html" id="contact">Contact</a>
+  <a href="index.html#place" id="home">Home</a>
+  <a href="about.html#info2" id="about">About</a>
+  <a href="project.html#info" id="projects">Projects</a>
+  <a href="contact.html#bottom" id="contact">Contact</a>
+  <a href="new.html" id="pictures">Pictures</a>
+
 </div>
 
 
   <div id="container">
     <div id="main"></div>
-    <div id="info"><h2><span class="border-bottom"> About me</span>
-</h2><p><a href="https://coderclass.nl/" target="_blank">I am Israh and I am 15 years old. At the moment I am attending the fourth year of highschool at the Metis Montessori Lyceum. <br>I live in the Netherlands and I love designing and making websites.
+    <div id="info"><h2><span class="border-bottom"> Projects I've done</span>
+</h2><p> Codaisseur Website voor restauarant Pasta Vino
+Blender <br> 3D animatie voor SOS-Kinderdorpen
+Python <br> Dashboard voor Gemeente Rotterdam
+Javascript <br> Game voor IBM
+Robotica Club – FLL 2017 / 2018
+Hack the city clean <br> Gemeente Amsterdam
+Concept<br> Toepassing Philips Hue lamps <br>
 
-<br>My hobbies are kickboksing, dancing and coding
-<br>My favourite subjects at schools are Computer Science, Economics and English.
-</a>
+
 
 
     </p></div>
@@ -44,42 +50,36 @@
   </div>
 
 
-
-<div id="flexbox">
-  <article class="content">
-
-    <div id= "form"><h1>Get in touch</h1></div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 
-    <form action="mailto:israh.emara@coderclass.nl" method="post" enctype="text/plain">
-      Name<br><input ttype="text"  placeholder="Your name.." class= name type="text" name="name" >
-      <br>
-      <br>
-      Last name<br>
-      <input type="text"  placeholder="Your lastname.." class = last-name type="text" name=" last name" >
-      <br>
-      <br>
-      E-mail<br>
-      <input type="text"  placeholder="Your e-mail.." class= email type="text" name="mail" value= >
-      <br>
-      <br>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
-      Comment<br>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-      <input type="text"  placeholder="Your comment.." class= comment type="text" name="comment" size="50"><br><br>
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
-      <a href="https://hetmml.nl/">
-      <img src="s.png"  class= "s"alt="h" >
-      </a>
-
-
-      <input class = submit type="submit" value="Send">
-      <input class= reset type="reset" value="Clear">
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 
 
-    </form>
-  </article>
+
+
+
 <!---
   <div class="box">
     <img src="cloud-computing.png" alt="h" style="width:100%;" id="fb">
